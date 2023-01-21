@@ -14,7 +14,20 @@ function byprompt(){
 x=document.getElementById("d2")
 x.innerHTML=prompt()
 }
+
+function linkbyjs(){
+usr_choice=confirm()
+if(usr_choice){
+document.location="./first.html"
+}else{
+alert("decided to stay here")
+}
+}
+
+
 </script>
+
+
 <body>
 <div id="d1">The html body part</div>
 <input id="i1">
@@ -29,6 +42,7 @@ x.innerHTML=prompt()
 <div id="d2">This value will change from the prompt() function</div>
 
 <button onclick="byprompt()">from prompt</button>
+<div id="d3" onclick="linkbyjs()">go to page first</div>
 
 
 </body>
