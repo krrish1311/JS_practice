@@ -1,3 +1,4 @@
+
 <script>
 function content_body(){
 let innerhtml=document.getElementById("d1")
@@ -7,6 +8,11 @@ alert(innerhtml)
 function content_input(){
 let val=document.getElementById("i1")
 alert(val.value)
+}
+
+function byprompt(){
+x=document.getElementById("d2")
+x.innerHTML=prompt()
 }
 </script>
 <body>
@@ -18,4 +24,11 @@ alert(val.value)
 </br>
 </br>
 <button onclick="content_input()">content of input</button>
+
+</br>
+<div id="d2">This value will change from the prompt() function</div>
+
+<button onclick="byprompt()">from prompt</button>
+
+
 </body>
