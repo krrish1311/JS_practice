@@ -1,0 +1,14 @@
+<script>
+function livetyping(){
+innerhtml=document.getElementById("d2")
+val=document.getElementById("t1")
+innerhtml.innerHTML=val.value
+}
+
+</script>
+
+<body>
+<div id="d1">the message from the below box </div>
+<div id="d2"></div>
+<textarea id="t1" onkeydown="livetyping()"></textarea>
+</body>
