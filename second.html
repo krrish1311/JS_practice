@@ -1,0 +1,21 @@
+<script>
+function content_body(){
+let innerhtml=document.getElementById("d1")
+//shows the location of the element
+alert(innerhtml)
+}
+function content_input(){
+let val=document.getElementById("i1")
+alert(val.value)
+}
+</script>
+<body>
+<div id="d1">The html body part</div>
+<input id="i1">
+</br>
+</br>
+<button onclick="content_body()">content of body</button>
+</br>
+</br>
+<button onclick="content_input()">content of input</button>
+</body>
