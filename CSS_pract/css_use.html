@@ -1,0 +1,30 @@
+<html>
+<head>
+<!-- there are many link files how to know the css file so we provide the relation -->
+<!--external css-->
+
+<link href="styleuse.css" rel="stylesheet">
+
+<!--internal css-->
+<style>
+div{
+color:blue;
+}
+</style>
+
+</head>
+<body>
+
+<div>This is div1</div>
+<div>This is div2</div>
+<div>This is div3</div>
+
+<!--no override here just where we put the link tag becomes priority-->
+<link href="styleuse.css" rel="stylesheet">
+
+<!--inline css-->
+<p style="color:red;font-size:24px;">this is para1</p>
+<p>this is para2</p>
+<p>this is para3</p>
+</body>
+</html>

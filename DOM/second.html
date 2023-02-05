@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+//in javascript we can access the elements through getelementbyid,tags,document.all[] and the forms by providing name to the forms 
+
+//the onsubmit button is a smart button attached to the forms so that when we submit it automatically redirect to the forms action and the onsubmit event also a different from the normal button keyword which accepts values in return boolean
+
+function validate(){
+var name=document.forms["myform1"]["name"]
+var age=document.forms["myform1"]["age"]
+//alert(name.value)
+console.log(name.value)
+if(name.value=='' || age.value=="" || isNaN(age.value)){
+   //alert("Enter the name first")
+   return false;
+} 
+}
+
+</script>
+</head>
+<body>
+<form action="m2.html" name="myform1" onsubmit="return validate()">
+name:<input name="name">
+age:<input name="age">
+<input type="submit">
+
+<!-- the required keyword does the work of the validation() function -->
+</form>
+
+<form action="m2.html" name="myform2">
+name:<input name="name" required>
+age:<input name="age">
+<input type="submit">
+
+</form>
+
+</body>
+</html>
